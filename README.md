@@ -10,23 +10,33 @@ You can install the stable version on
 [CRAN](http://cran.rstudio.com/package=ibelief):
 
 ```r
-install.packages('ibelief', dependencies = TRUE)
+install.packages("ibelief", dependencies = TRUE)
 ```
 
-Also you can download the newest source folder of the package and build the package yourselves:
+Also you can download the newest source folder of the package from [GitHub](https://github.com/kuangzhou/ibelief), and build the package yourselves:
 
 ```bash
-git clone https://github.com/KuangZHOU/ibelief.git
+git clone https://github.com/kuangzhou/ibelief.git
 R CMD build ibelief
+```
+
+Then you can install the package using R CMD INSTALL command
+
+```bash
 R CMD INSTALL ibelief_*.tar.gz
 ```
 
-Then you can install the package from source in R:
+or install the package from source in R:
 
 ```r
 install.packages("~/ibelief_*.tar.gz", repos = NULL, type = "source")
 ```
 
-## Change information
+## Change information 
 
-see the NEWS file
+### For the stable version on CRAN
+
+see the [NEWS-CRAN](http://cran.r-project.org/web/packages/ibelief/NEWS) file
+
+### For the latest beta version on GitHub 
+see the [NEWS-BETA](https://raw.githubusercontent.com/kuangzhou/ibelief/master/NEWS) file

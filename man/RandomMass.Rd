@@ -3,7 +3,7 @@
 \alias{RandomMass}
 \title{Generating masses}
 \usage{
-RandomMass(nbFocalElement, ThetaSize, nbMass, Type, singleton)
+RandomMass(nbFocalElement, ThetaSize, nbMass, Type, singleton, Include)
 }
 \arguments{
 \item{nbFocalElement}{The number of focal elements}
@@ -14,7 +14,7 @@ RandomMass(nbFocalElement, ThetaSize, nbMass, Type, singleton)
 
 \item{Type}{Which kind of mass to generate:
 
-          Type=1 for focal elements can be evrywhere
+          Type=1 for focal elements can be everywhere
 
           Type=2 for focal elements can not be on the emptyset
 
@@ -35,12 +35,22 @@ RandomMass(nbFocalElement, ThetaSize, nbMass, Type, singleton)
           Type=10 On one focal element contain a defined singleton, on other focal elements and on \eqn{\Theta} (ignorance)
 
           Type=11 On one focal element contain a defined singleton, on other focal elements (not emptyset) and on
-               \eqn{\Theta} (ignorance)}
+               \eqn{\Theta} (ignorance)
 
-\item{singleton}{The singleton element (with only one element) in the focal sets. It should be given if Type is from 5 to 11}
+          Type=12 For consonant bba with nested focal elements,  all of them contain a defined singleton. If parameter singleton is set to 0, the defined singleton can be any one of the element in the discernment framework. Note that the defined singleton may not be one of the focal elements.
+
+          Type=13 For non-dogmatic consonant bba with nested focal elements,  all of them contain a defined singleton. Different from Type 12, the mass given to \eqn{\Theta} must be positive (non-dogmatic). If parameter singleton is set to 0, the defined sigleton can be any one of the element in the discernment framework. Note that the defined singleton is one of the focal elements.
+
+          Type=14 For non-dogmatic consonant bba with nested focal elements,  all of them contain a defined singleton. The focal elements must contain the defined sigleton and \eqn{\Theta}. If parameter singleton is set to 0, the defined sigleton can be any one of the element in the discernment framework. Note that the difined singleton may not be the focal elements.
+
+          Type=15 Random SSFs with Include and \eqn{\Theta} as focal elements. Generally, parameter Include shoud have the same length as nbMass. If the lenght of parameter Include is 1, all the random masses have the same focal elements.  If Include is missing, then the focal element (except \eqn{\Theta}) could be randomly set to be any subset of \eqn{\Theta} except the empty set and the total ignorance.}
+
+\item{singleton}{The singleton element (with only one element) in the focal sets. It should be given a number from 1 to \eqn{ThetaSize} if Type is from 5 to 11.}
+
+\item{Include}{The natrual id of the focal element (not \eqn{\Theta}) of SSFs}
 }
 \value{
-The generated mass matrix. Each column represenets a piece of mass
+The generated mass matrix. Each column represents a piece of mass
 }
 \description{
 Different ways to generate masses
@@ -50,5 +60,8 @@ RandomMass(nbFocalElement=3, ThetaSize=3, nbMass=4, Type=1)
 RandomMass(nbFocalElement=3, ThetaSize=4, nbMass=4, Type=3)
 RandomMass(nbFocalElement=4, ThetaSize=4, nbMass=4, Type=5,singleton=2)
 RandomMass(nbFocalElement=4, ThetaSize=4, nbMass=4, Type=10,singleton=2)
+RandomMass(nbFocalElement=4, ThetaSize=4, nbMass=4, Type=13,singleton=2)
+RandomMass(nbFocalElement=2, ThetaSize=4, nbMass=4, Type=14,singleton=2)
+RandomMass(ThetaSize=4, nbMass=4, Type=15, Include=2)
 }
 

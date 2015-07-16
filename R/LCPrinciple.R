@@ -1,23 +1,23 @@
-##' Least-Committed  Rules for creating bbas
+##' Least-Committed  Principle for creating bbas
 ##'
 ##' @export
-##' @param Mat matirx, \eqn{m \times k}, \eqn{m} is the number of sources, \eqn{k} is the length of probability vectors. If the numer of sources is 1, the input probabiltiy could be a vector. 
+##' @param Mat matrix, \eqn{m \times k}, \eqn{m} is the number of sources, \eqn{k} is the length of probability vectors. If the number of sources is 1, the input probability could be a vector. 
 ##' @return mass_bba matrix, \eqn{m \times 2^k}, each column is a bba. If there is only one source, the output is a bba vector.
 ##' @examples
 ##' pro1 = c(0.25, 0.25, 0.25, 0.25);
 ##' pro2 = c(0.3, 0.2, 0.2, 0.1);
 ##' pro3 = rbind(pro1, pro2);
 ##' 
-##' LCRule(pro1)
-##' LCRule(pro2)
-##' LCRule(pro3)
+##' LCPrincple(pro1)
+##' LCPrincple(pro2)
+##' LCPrincple(pro3)
 ##'
 
-LCRule <- function(Mat) {
+LCPrincple <- function(Mat) {
     
-    # From probibilty to bbas using Least-Comitted princple
+    # From probability to bbas using Least-Committed principle
     
-    # Input: Mat, matirx, m*k, m is the number of sources, k is the length of pro.vectors.
+    # Input: Mat, matrix, m*k, m is the number of sources, k is the length of pro.vectors.
     
     # Output: mass_bba, matrix, 2^k * m, each column is a bba.
     

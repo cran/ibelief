@@ -7,7 +7,7 @@ The R package **ibelief** aims to provide some basic functions to implement beli
 ## Installation
 
 You can install the stable version on
-[CRAN](http://cran.rstudio.com/package=ibelief):
+[CRAN](https://CRAN.R-project.org/package=ibelief):
 
 ```r
 install.packages("ibelief", dependencies = TRUE)
@@ -36,7 +36,7 @@ install.packages("~/ibelief_*.tar.gz", repos = NULL, type = "source")
 
 ### For the stable version on CRAN
 
-see the [NEWS-CRAN](http://cran.r-project.org/web/packages/ibelief/NEWS) file
+see the [NEWS-CRAN](https://CRAN.R-project.org/package=ibelief/NEWS) file
 
 ### For the latest beta version on GitHub 
 see the [NEWS-BETA](https://raw.githubusercontent.com/kuangzhou/ibelief/master/NEWS) file

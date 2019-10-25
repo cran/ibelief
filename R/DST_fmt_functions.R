@@ -74,6 +74,16 @@ mtopl  <-  function(InputVec) {
     return(out)
 }
 
+##' @export
+mtocontour  <-  function(InputVec) {
+    # computing from m to contour function in = m vector out = contour vector
+    
+    InputVec = mtob(InputVec)
+    out = btopl(InputVec)
+	ThetaSize = log2(length(InputVec))
+    return(out[2^(1:ThetaSize - 1) + 1])
+}
+
 
 ##' @export
 mtoq <- function(InputVec) {

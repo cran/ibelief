@@ -35,7 +35,7 @@
 ##' criterion=13 LNS rule, for separable masses
 ##' 
 ##' criterion=131 LNSa rule, for separable masses
-##' @param TypeSSF If TypeSSF = 0, it is not a SSF, the general case. If TypeSSF = 1, a SSF with a singleton as a focal element. If TypeSSF = 2, a SSF with any subset of \eqn{\Theta} as a focal element. 
+##' @param TypeSSF The parameter of LNS rule (criterion = 13) and LNSa rule (criterion = 131). If TypeSSF = 0, it is not a SSF, the general case. If TypeSSF = 1, a SSF with a singleton as a focal element. If TypeSSF = 2, a SSF with any subset of \eqn{\Theta} as a focal element. 
 ##' @return The combined mass vector. One column. 
 ##' @examples
 ##' 

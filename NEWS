@@ -24,4 +24,12 @@ ibelief 1.2
 * In DST function, the combination rules LNS and LNSa are added.
 
 * Change the name of the function LCRule to LCPrinciple 
+
+ibelief 1.3
+--------------------------------------------------------------------------------
+
+* Add a kind of FMT function converting mass function to contour function
+
+* Add a decison rule (criterion 6, the distance criterion) in decisionDST function 
+
      

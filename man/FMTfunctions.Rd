@@ -11,6 +11,7 @@
 \alias{mtob}
 \alias{mtobel}
 \alias{mtobetp}
+\alias{mtocontour}
 \alias{mtonm}
 \alias{mtopl}
 \alias{mtoq}

@@ -19,7 +19,7 @@
 ##'
 ##' @param r The parameter in BayesianMass function. If criterion 5 is used, it should be given. 
 ##' Otherwise it will be set to the default value 0.5.
-##' @param sDec The parameter for the set on which we want to decide. It should be a subset of {1,2,...,\eqn{2^n}}, where \eqn{n} is the number of elements in \eqn{\Theta}. If criterion 6 is used, it should be given; Otherwise it will be set as the default value \eqn{2^\Theta} 
+##' @param sDec The parameter for the set on which we want to decide. It should be a subset of \{1,2,3,...,\eqn{2^n}\}, where \eqn{n} is the number of elements in \eqn{\Theta}. If criterion 6 is used, it should be given; Otherwise it will be set as the default value \eqn{2^\Theta}. 
 ##' @param D The parameter for the used matrix in Jousselme distance. If criterion 6 is used, it should be given. Otherwise it will be  set as default
 ##' Otherwise it will be calculated.
 ##' @return The decision vector. E.g., in classification problem, class labels. 
